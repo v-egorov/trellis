@@ -3,13 +3,25 @@
 # Define accompanying passwords/secrets in group_vars/development/vault.yml
 
 wordpress_sites:
-  m.v-egorov.ru:
-    site_hosts:
-      - canonical: m.v-egorov.ru
-        redirects:
-          - mbp.v-egorov.ru
+  #m.v-egorov.ru:
+    #site_hosts:
+      #- canonical: m.v-egorov.ru
+        # redirects:
+        #  - mbp.v-egorov.ru
             # local_path: ../bedrock # path targeting local Bedrock site directory (relative to Ansible root)
-    local_path: ../../aikido/www
+    #local_path: ../../aikido/www
+    #admin_email: k160zel@gmail.com
+    #multisite:
+      #enabled: false
+    #ssl:
+      #enabled: false
+      #provider: self-signed
+    #cache:
+      #enabled: false
+  f.v-egorov.ru:
+    site_hosts:
+      - canonical: f.v-egorov.ru
+    local_path: ../../feeria/www
     admin_email: k160zel@gmail.com
     multisite:
       enabled: false
