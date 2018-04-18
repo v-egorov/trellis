@@ -9,7 +9,8 @@ wordpress_sites:
         redirects:
           - www.example.com
     local_path: ../c2 # path targeting local Bedrock site directory (relative to Ansible root)
-    repo: git@github.com:v-egorov/bedrock.git # Git repo URL
+    # repo: git@github.com:v-egorov/bedrock.git # Git repo URL
+    repo: git@gitlab.com:v-egorov/bedrock.git # Git repo URL
     # repo_subtree_path: / # relative path to your Bedrock/WP directory in your repo
     branch: c2
     multisite:
